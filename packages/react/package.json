@@ -1,5 +1,5 @@
 {
-	"name": "@lmgiuelm/react",
+	"name": "@lmgiuelm-ui/react",
 	"version": "1.0.0",
 	"description": "",
 	"main": "./dist/index.js",
@@ -11,8 +11,9 @@
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
+		"@lmiguelm-ui/ts-config": "*",
 		"@lmiguelm-ui/tokens": "*",
 		"tsup": "^8.0.1",
 		"typescript": "^5.3.3"
