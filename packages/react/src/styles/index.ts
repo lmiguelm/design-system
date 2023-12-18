@@ -1,6 +1,6 @@
-import { createStitches, defaultThemeMap } from '@stitches/react'
+import { createStitches, defaultThemeMap } from "@stitches/react";
 
-import * as UITheme from '@lmiguelm-ui/tokens'
+import * as UITheme from "@lmiguelm-ui/tokens";
 
 export const {
   styled,
@@ -14,8 +14,8 @@ export const {
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
-    height: 'space',
-    width: 'space',
+    height: "space",
+    width: "space",
   },
   theme: UITheme,
-})
+});
