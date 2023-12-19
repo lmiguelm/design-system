@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@lmiguelm-ui/react";
+import { Box, BoxProps, Text } from "@lmiguelm-ui/react";
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
@@ -8,7 +8,7 @@ export default {
   args: {
     children: (
       <>
-        <span>Testando o elemento Box</span>
+        <Text>Testando o elemento Box</Text>
       </>
     ),
   },
