@@ -1,19 +1,26 @@
-import { Avatar, AvatarProps } from "@lmiguelm-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+import { Avatar, AvatarProps } from '@lmiguelm-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Data display/Avatar",
+  title: 'Data display/Avatar',
   component: Avatar,
   args: {
-    src: "https://github.com/lmiguelm.png",
-    alt: "lmiguelm",
+    src: 'https://github.com/lmiguelm.png',
+    alt: 'lmiguelm',
   },
-} as Meta<AvatarProps>;
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
+} as Meta<AvatarProps>
 
-export const Primary: StoryObj<AvatarProps> = {};
+export const Primary: StoryObj<AvatarProps> = {}
 
 export const WithFallback: StoryObj<AvatarProps> = {
   args: {
     src: undefined,
   },
-};
+}
