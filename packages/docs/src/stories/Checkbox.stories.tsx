@@ -1,0 +1,23 @@
+import { Box, Text, CheckBox, CheckBoxProps } from '@lmiguelm-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
+
+export default {
+  title: 'Form/Checkbox',
+  component: CheckBox,
+  decorators: [
+    (Story) => {
+      return (
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
+        >
+          {Story()}
+          <Text size="sm">Accept terms of use</Text>
+        </Box>
+      )
+    },
+  ],
+} as Meta<CheckBoxProps>
+
+export const Primary: StoryObj<CheckBoxProps> = {}
