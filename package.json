@@ -8,7 +8,7 @@
     "build": "turbo run build",
      "changeset": "npx changeset",
      "version-packages": "npx changeset version",
-     "release": "turbo run build --filter=packages/docs && npx changeset publish"
+     "release": "turbo run build --filter=!docs && npx changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
