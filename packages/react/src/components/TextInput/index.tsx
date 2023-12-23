@@ -1,8 +1,8 @@
-import React, { ComponentProps } from "react";
-import { Input, Prefix, TextInputContainer } from "./styles";
+import React, { ComponentProps } from 'react'
+import { Input, Prefix, TextInputContainer } from './styles'
 
 export interface TextInputProps extends ComponentProps<typeof Input> {
-  prefix?: string;
+  prefix?: string
 }
 
 export function TextInput({ prefix, ...props }: TextInputProps) {
@@ -11,5 +11,7 @@ export function TextInput({ prefix, ...props }: TextInputProps) {
       {!!prefix && <Prefix>{prefix}</Prefix>}
       <Input {...props} />
     </TextInputContainer>
-  );
+  )
 }
+
+TextInput.displayName = 'TextInput'
