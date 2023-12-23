@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
-     "changeseat": "npx changeset",
+     "changeset": "npx changeset",
      "version-packages": "npx changeset version",
      "release": "turbo run build --filter=packages/docs && npx changeset publish"
   },
